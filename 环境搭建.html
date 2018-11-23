@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// 配置环境 
+		//1. 安装node --->自动安装npm(包管理工具)
+		//2. npm init -y  项目初始化,会生成一个package.json 文件  里面有依赖项
+							--pakage.json文件属性的作用
+							-- name:  项目名/报名
+							-- version: 版本号
+							-- dependencies: 依赖项
+		//3. nodemon 命令   npm i nodemon -g 全局安装
+		//4. nrm npm 仓库地址管理工具  npm i nrm -g
+				-- nrm ls(list)  查看仓库地址
+				-- nrm use 仓库地址   切换到相应的地址
+		//5. npm cache clean -f 清除 npm 缓存
+		//6. webpack 本地安装
+		        --npm i webpack --save -dev  或者 npm i webpack -D
+		        需要在 package.json  配置 scripts  "build"--webpack "dev "--webpack-dev-server
+		        package.json  <-------------------------->     webpack.config.js
+		        "script":{                                     entry  
+		        	"build":"webpack",           ------>>>     output       
+		        	"dev":"webpack-dev-server"   ------>>>     webServer
+		        }
+		//7. vue-cli 脚手架   
+		      -- yarn global add vue-cli
+		      -- vue init webpack 项目名称
+		//8. eslink 校验代码规范 + pretties(vsCode 插件)
+		           设置 formatSave   该为ture
+		           设置 prettier  prettier.semi:false  prettier.singleQuete:true
+	</script>
+</body>
+</html>
